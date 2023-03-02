@@ -1,0 +1,1 @@
+obj_game.boss = 0
