@@ -1,4 +1,5 @@
-score -= 15
+health -= 5
 instance_destroy()
+exit
 
 

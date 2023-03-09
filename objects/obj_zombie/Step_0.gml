@@ -8,7 +8,11 @@ if(zhealth <= 0)
 instance_destroy()	
 if(miniboss == 1)
 {
-score += 1
+score += 3
+}
+else
+{
+score += 1	
 }
 }
 

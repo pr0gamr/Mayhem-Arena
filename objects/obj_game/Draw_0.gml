@@ -20,3 +20,7 @@ if(boss = 1)
 	draw_text_transformed_color(room_width/2,100,"BOSS HEALTH : "+string(obj_boss.bhealth),3,3,0,c_white,c_white,c_white,c_white,1)
 	draw_set_halign(fa_left)
 }
+draw_healthbar(room_width/2-100, 25, room_width/2+100, 50, health*10 ,c_black,c_red,c_green,0,true,true)
+draw_set_halign(fa_center)
+draw_text(room_width/2,30,"health : "+string(health))
+draw_set_halign(fa_left)

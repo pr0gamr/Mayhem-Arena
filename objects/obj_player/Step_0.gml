@@ -45,7 +45,7 @@ if(choice == 2) & (shotguncooldown <= 0)
 	var inst = instance_create_layer(x,y,"Instances",obj_shell)
 	inst.direction = image_angle + irandom_range(-30,30)
 	}
-	shotguncooldown = 120
+	shotguncooldown = 96
 
 }
 if(choice == 3) & (rpgcooldown <= 0)

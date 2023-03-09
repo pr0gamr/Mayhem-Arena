@@ -7,6 +7,10 @@ if(ramping >= 1200)
 scale = scale * 0.75
 ramping = 0
 }
+if(scale <= 0.01999)
+{
+scale = 0.02	
+}
 
 if(score == 50 or score == 150 or score == 250) & (boss != 1)
 {
