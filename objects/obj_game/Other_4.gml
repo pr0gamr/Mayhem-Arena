@@ -1,4 +1,4 @@
-if(room = rm_game)
+if(room == rm_game)
 {
 
 
