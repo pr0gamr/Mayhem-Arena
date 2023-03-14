@@ -5,7 +5,7 @@ ramping += 1
 }
 if(ramping >= 1200)
 {
-scale = scale * 0.75
+scale = scale * 0.5
 ramping = 0
 }
 if(scale <= 0.01999)

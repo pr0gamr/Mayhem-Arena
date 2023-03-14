@@ -50,9 +50,11 @@ if(choice == 2) & (shotguncooldown <= 0)
 }
 if(choice == 3) & (rpgcooldown <= 0)
 {
+	
 	var inst = instance_create_layer(x,y,"Instances",obj_rocket)
 	inst.direction = image_angle
 	inst.image_angle = image_angle
+	
 	
 	rpgcooldown = 180
 }
