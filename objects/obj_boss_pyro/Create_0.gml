@@ -1,6 +1,7 @@
 
-bhealth = 1000
-speed = 0.5
+
+bhealth = 250
+speed = 1.5
 
 attack = 0
 chargeattack = 0

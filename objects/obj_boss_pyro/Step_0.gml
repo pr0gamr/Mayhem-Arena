@@ -19,7 +19,7 @@ attack += 1
 
 if(attack >= 300)
 {
-var attack_choose = choose(0,1,2,3)
+var attack_choose = choose(0,1,2,3,4)
 
 if(attack_choose == 0)
 {
@@ -50,10 +50,34 @@ instance_create_layer(d*4,room_height,"Instances",obj_ver_aim)
 }
 if(attack_choose == 3)
 {
-//insertrockwallthingymiggee
-alarm_set(3,1)
-bhealth += 100
+	repeat(20)
+	{
+if(choose(0,1) == 0 ){
+var xx = choose(0,room_width)
+var yy = irandom_range(0, room_height)
+} else {
+var xx = irandom_range(0, room_width)
+var yy = choose(0, room_height)
 }
-
+instance_create_layer(xx, yy, "Instances",obj_zombie)
+	}
+}
+if(attack_choose == 4)
+{
+	repeat(3)
+	{
+if(choose(0,1) == 0 ){
+var xx = choose(0,room_width)
+var yy = irandom_range(0, room_height)
+} else {
+var xx = irandom_range(0, room_width)
+var yy = choose(0, room_height)
+}
+var inst = instance_create_layer(xx, yy, "Instances",obj_zombie)
+inst.zhealth = 20
+inst.sprite_index = spr_miniboss
+inst.speed = 1.5
+	}
+}
 attack = 0
 }
