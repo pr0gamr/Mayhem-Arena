@@ -1,4 +1,4 @@
-health = 10
+health = 20
 
 
 

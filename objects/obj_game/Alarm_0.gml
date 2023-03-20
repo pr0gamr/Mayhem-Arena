@@ -1,7 +1,7 @@
 if(room != rm_game){
 exit
 }
-if(boss != 1)
+if(boss < 1)
 {
 if(choose(0,1) == 0 ){
 var xx = choose(0,room_width)

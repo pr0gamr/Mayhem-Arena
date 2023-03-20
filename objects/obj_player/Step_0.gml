@@ -35,8 +35,12 @@ if(choice == 1) & (riflecooldown <= 0)
 	var inst = instance_create_layer(x,y,"Instances",obj_bullet)
 	inst.direction = image_angle
 	
-	riflecooldown = 120
-
+	if(room = rm_game)
+	{
+		riflecooldown = 120
+	}else{
+		riflecooldown = 30
+	}
 }
 if(choice == 2) & (shotguncooldown <= 0)
 {
@@ -45,7 +49,13 @@ if(choice == 2) & (shotguncooldown <= 0)
 	var inst = instance_create_layer(x,y,"Instances",obj_shell)
 	inst.direction = image_angle + irandom_range(-30,30)
 	}
-	shotguncooldown = 96
+
+	if(room = rm_game)
+	{
+		shotguncooldown = 96
+	}else{
+		shotguncooldown = 24
+	}
 
 }
 if(choice == 3) & (rpgcooldown <= 0)
@@ -55,7 +65,13 @@ if(choice == 3) & (rpgcooldown <= 0)
 	inst.direction = image_angle
 	inst.image_angle = image_angle
 	
+	if(room = rm_game)
+	{
+		rpgcooldown = 180
+	}else{
+		rpgcooldown = 45
+	}
 	
-	rpgcooldown = 180
+
 }
 }

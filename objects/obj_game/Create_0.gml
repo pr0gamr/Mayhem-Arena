@@ -1,4 +1,4 @@
-score = 49
+score = 60
 ramping = 0
 scale = 2
 boss = 0
