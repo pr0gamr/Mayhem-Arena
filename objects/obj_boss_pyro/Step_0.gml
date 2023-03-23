@@ -19,7 +19,7 @@ attack += 1
 
 if(attack >= 180)
 	{
-	var attack_choose = choose(0,1,2,3,4)
+	var attack_choose = choose(0,1,2,3)
 
 	if(attack_choose == 0)
 	{
@@ -50,7 +50,13 @@ if(attack >= 180)
 }
 	if(attack_choose == 3)
 	{
-
+		repeat(60)
+		{
+			var inst = instance_create_layer(x,y,"Instances",obj_fireball)	
+			inst.direction = fireball
+			fireball += 6
+		}
+		fireball = 0
 	}
 
 

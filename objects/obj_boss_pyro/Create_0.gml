@@ -1,4 +1,4 @@
-
+fireball = 0
 
 bhealth = 250
 speed = 1.5

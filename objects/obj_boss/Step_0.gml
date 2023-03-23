@@ -17,7 +17,7 @@ score += 10
 
 attack += 1
 
-if(attack >= 300)
+if(attack >= 450)
 {
 var attack_choose = choose(0,1,2,3)
 
@@ -51,8 +51,9 @@ instance_create_layer(d*4,room_height,"Instances",obj_ver_aim)
 if(attack_choose == 3)
 {
 //insertrockwallthingymiggee
-alarm_set(3,1)
+alarm_set(3,180)
 bhealth += 100
+instance_create_layer(x,y,"Instances",obj_bossblock)
 }
 
 attack = 0
