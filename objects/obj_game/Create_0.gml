@@ -6,3 +6,5 @@ draw_set_font(fnt_score)
 randomize()
 cursor_sprite = spr_cursor_aim
 window_set_cursor(cr_none)
+globalvar finalchoice
+alarm_set(1,1)

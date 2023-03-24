@@ -17,7 +17,7 @@ score += 10
 
 attack += 1
 
-if(attack >= 300)
+if(attack >= 150)
 {
 var attack_choose = choose(0,1,2,3,4)
 
@@ -79,5 +79,22 @@ inst.sprite_index = spr_miniboss
 inst.speed = 1.5
 	}
 }
+if(attack_choose == 5)
+{
+//insertrockwallthingymiggee
+alarm_set(3,180)
+bhealth += 200
+instance_create_layer(x,y,"Instances",obj_bossblock)
+}
+if(attack_choose == 6)
+	{
+		repeat(60)
+		{
+			var inst = instance_create_layer(x,y,"Instances",obj_fireball)	
+			inst.direction = fireball
+			fireball += 6
+		}
+		fireball = 0
+	}
 attack = 0
 }
