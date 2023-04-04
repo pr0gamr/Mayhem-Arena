@@ -44,7 +44,7 @@ if(boss < 1)
 if(keyboard_check_pressed(vk_enter)){
 	switch(room){
 			case rm_start:
-				room_goto(rm_game)
+				room_goto(rm_finalboss)
 				break
 				
 			case rm_gameover:
@@ -58,4 +58,5 @@ if(room == rm_game)
 if(health <= 0){
 	room_goto(rm_gameover)
 }
+
 }

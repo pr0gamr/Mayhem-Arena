@@ -1,5 +1,6 @@
-health -= 5
 instance_destroy()
+health -= 5
+
 exit
 
 

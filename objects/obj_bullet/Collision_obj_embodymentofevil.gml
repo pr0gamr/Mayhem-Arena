@@ -1,5 +1,5 @@
 instance_destroy()
 with other
 {
-zhealth -= 2	
+bhealth -= 2	
 }
