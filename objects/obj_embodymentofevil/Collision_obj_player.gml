@@ -1,3 +1,3 @@
 health -= 10
-x = room_width/2
-y = room_height/2
+speed = -50
+alarm_set(2,8)

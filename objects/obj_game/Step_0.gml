@@ -48,12 +48,20 @@ if(keyboard_check_pressed(vk_enter)){
 				break
 				
 			case rm_gameover:
+			if(embodyment != 1)
+			{
 				game_restart()
+			}else{
+				finalchoice = 0
+				health = 1
+				room_goto(rm_finalboss)	
+				embodyment = 2
+			}
 				break
 	}
 }
 
-if(room == rm_game)
+if(room == rm_game or room == rm_finalboss)
 {
 if(health <= 0){
 	room_goto(rm_gameover)

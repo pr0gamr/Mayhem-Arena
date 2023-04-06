@@ -69,6 +69,8 @@ Arrow keys to move
 	case rm_gameover:
 if(finalchoice != 1)
 {
+	if(embodyment != 1)
+	{
 		draw_set_halign(fa_center)
 		var C = c_red
 			draw_text_transformed_color(
@@ -76,7 +78,7 @@ if(finalchoice != 1)
 			3, 3, 0, C, C, C, C, 1
 			)
 			var R = c_white
-	draw_text_transformed_color(
+			draw_text_transformed_color(
 			room_width/2, 300, "Final kills : "+string(score), 
 			2, 2, 0, R, R, R, R, 1
 			)
@@ -84,6 +86,26 @@ if(finalchoice != 1)
 			room_width/2, 700, 
 	">>PRESS ENTER TO RESTART<<",2,2,0)
 			draw_set_halign(fa_left)
+	}else{
+		if(embodyment = 1)
+		{
+			draw_set_halign(fa_center)
+		var C = c_red
+			draw_text_transformed_color(
+			room_width/2, 200, "YOU ALMOST GAVE IN", 
+			3, 3, 0, C, C, C, C, 1
+			)
+			var R = c_white
+			draw_text_transformed_color(
+			room_width/2, 300, "YOU CAN BEAT HIM, DON'T GIVE UP", 
+			2, 2, 0, R, R, R, R, 1
+			)
+			draw_text_transformed(
+			room_width/2, 700, 
+	">>PRESS ENTER TO GET UP AND FIGHT<<",2,2,0)
+			draw_set_halign(fa_left)
+		}
+	}
 }else{ 
 	if(finalchoice = 1)
 {

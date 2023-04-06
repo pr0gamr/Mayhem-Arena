@@ -1,3 +1,4 @@
+health = 10
 score = 0
 ramping = 0
 scale = 2
