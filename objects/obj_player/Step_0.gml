@@ -47,7 +47,7 @@ if(choice == 2) & (shotguncooldown <= 0)
 	repeat(12)
 	{
 	var inst = instance_create_layer(x,y,"Instances",obj_shell)
-	inst.direction = image_angle + irandom_range(-30,30)
+	inst.direction = image_angle + irandom_range(-20,20)
 	}
 
 	if(room = rm_game)
