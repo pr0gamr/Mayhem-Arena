@@ -24,12 +24,12 @@ if(boss < 1)
 }
 		if (score >= 50 and score <= 59)
 		{
-			instance_create_layer(xx, yy, "Instances",obj_boss)
+			instance_create_layer(xx, yy, "Instances",obj_boss_pyro)
 			boss = 1
 		}
 		if (score >= 150 and score <= 159)
 		{
-				instance_create_layer(xx, yy, "Instances",obj_boss_pyro)
+				instance_create_layer(xx, yy, "Instances",obj_boss)
 				boss = 2
 		}
 		if (score >= 250 and score <= 259)
@@ -44,7 +44,7 @@ if(boss < 1)
 if(keyboard_check_pressed(vk_enter)){
 	switch(room){
 			case rm_start:
-				room_goto(rm_finalboss)
+				room_goto(rm_game)
 				break
 				
 			case rm_gameover:

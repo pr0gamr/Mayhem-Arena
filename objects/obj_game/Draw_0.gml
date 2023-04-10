@@ -18,13 +18,13 @@ switch(room){
 	if(boss = 1)
 	{
 		draw_set_halign(fa_center)
-		draw_text_transformed_color(room_width/2,100,"BOSS HEALTH : "+string(obj_boss.bhealth),3,3,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(room_width/2,100,"BOSS HEALTH : "+string(obj_boss_pyro.bhealth),3,3,0,c_white,c_white,c_white,c_white,1)
 		draw_set_halign(fa_left)
 	}
 	if(boss = 2)
 	{
 		draw_set_halign(fa_center)
-		draw_text_transformed_color(room_width/2,100,"BOSS HEALTH : "+string(obj_boss_pyro.bhealth),3,3,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(room_width/2,100,"BOSS HEALTH : "+string(obj_boss.bhealth),3,3,0,c_white,c_white,c_white,c_white,1)
 		draw_set_halign(fa_left)
 	}
 	if(boss = 3)

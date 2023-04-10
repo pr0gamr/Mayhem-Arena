@@ -1,5 +1,5 @@
 health = 10
-score = 0
+score = 150
 ramping = 0
 scale = 2
 boss = 0

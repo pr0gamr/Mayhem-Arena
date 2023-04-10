@@ -30,7 +30,7 @@ shotguncooldown -= 1
 rpgcooldown -= 1
 if(mouse_check_button(mb_left))
 {
-if(choice == 1) & (riflecooldown <= 0)
+if(choice == 1) & (riflecooldown <= Rscale)
 {
 	var inst = instance_create_layer(x,y,"Instances",obj_bullet)
 	inst.direction = image_angle
@@ -42,7 +42,7 @@ if(choice == 1) & (riflecooldown <= 0)
 		riflecooldown = 30
 	}
 }
-if(choice == 2) & (shotguncooldown <= 0)
+if(choice == 2) & (shotguncooldown <= Sscale)
 {
 	repeat(12)
 	{
@@ -58,7 +58,7 @@ if(choice == 2) & (shotguncooldown <= 0)
 	}
 
 }
-if(choice == 3) & (rpgcooldown <= 0)
+if(choice == 3) & (rpgcooldown <= Gscale)
 {
 	
 	var inst = instance_create_layer(x,y,"Instances",obj_rocket)

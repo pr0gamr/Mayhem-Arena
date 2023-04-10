@@ -19,7 +19,7 @@ attack += 1
 
 if(attack >= 150)
 {
-var attack_choose = choose(0,1,2,3,4)
+var attack_choose = choose(0,1,2,3,4,5,6)
 
 if(attack_choose == 0)
 {
