@@ -54,7 +54,7 @@ See how long you can survive!
 Left click to shoot
 Right click to switch weapons
 Move mouse to aim
-Arrow keys to move
+WASD to move
 
 
 
