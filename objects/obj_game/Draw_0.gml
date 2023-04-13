@@ -1,3 +1,5 @@
+//draw_text(room_width/2,room_height/2,"test"+string(testing))
+
 switch(room){
 	case rm_game:
 		draw_text_transformed_color(1100,794,"weapon select : ",1.5,1.5,0,c_white,c_white,c_white,c_white,1)
@@ -175,6 +177,25 @@ do you accept?"
 		draw_set_halign(fa_left)
 	}
 break
+
+case rm_win:
+		draw_set_halign(fa_center)
+		var C = c_aqua
+			draw_text_transformed_color(
+			room_width/2, 200, "CONGRATULATIONS!", 
+			3, 3, 0, C, C, C, C, 1
+			)
+			var R = c_white
+			draw_text_transformed_color(
+			room_width/2, 300, "YOU VANQUISHED EVIL!", 
+			2, 2, 0, R, R, R, R, 1
+			)
+	draw_text_transformed(
+			room_width/2, 700, 
+	">>PRESS ENTER TO RESTART<<",2,2,0)
+			draw_set_halign(fa_left)
+			
+			break
 }
 
 

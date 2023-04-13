@@ -28,6 +28,7 @@
     {"name":"obj_hor_aim","order":9,"path":"objects/obj_hor_aim/obj_hor_aim.yy",},
     {"name":"obj_bossblock","order":10,"path":"objects/obj_bossblock/obj_bossblock.yy",},
     {"name":"spr_boss_aim","order":8,"path":"sprites/spr_boss_aim/spr_boss_aim.yy",},
+    {"name":"rm_win","order":1,"path":"rooms/rm_win/rm_win.yy",},
     {"name":"obj_boss","order":6,"path":"objects/obj_boss/obj_boss.yy",},
     {"name":"obj_bullet","order":4,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"spr_explosion","order":7,"path":"sprites/spr_explosion/spr_explosion.yy",},

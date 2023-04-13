@@ -1,4 +1,20 @@
 if(room == rm_game){
+if(score >= 50 and score <= 99 and increment == 0)
+{
+	increment += 1
+	scale = 1.25
+}
+if(score >= 100 and score <= 149 and increment == 1)
+{
+	increment += 1
+	scale = 1
+}
+if(score >= 150 and score <= 200 and increment == 2)
+{
+	increment += 1
+	scale = 0.75
+}
+
 if(boss < 1)
 {
 	ramping += 1
@@ -57,6 +73,10 @@ if(keyboard_check_pressed(vk_enter)){
 				room_goto(rm_finalboss)	
 				embodyment = 2
 			}
+				break
+				
+			case rm_win:
+				game_restart()
 				break
 	}
 }
