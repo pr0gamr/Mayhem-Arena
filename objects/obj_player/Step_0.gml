@@ -53,4 +53,12 @@ if(choice == 3) & (rpgcooldown <= Gscale)
 	
 
 }
+if(choice == 4)
+{
+	repeat(5)
+	{
+	instance_create_layer(x,y,"Instances",obj_homingclose)
+	instance_create_layer(x,y,"Instances",obj_homingfar)
+	}
+}
 }

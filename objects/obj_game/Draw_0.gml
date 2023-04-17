@@ -15,6 +15,10 @@ switch(room){
 	{
 		draw_text_transformed_color(1300,794,"RPG",1.5,1.5,0,c_white,c_white,c_white,c_white,1)	
 	}
+	if(obj_player.choice == 4)
+	{
+		draw_text_transformed_color(1300,794,"?????",1.5,1.5,0,c_white,c_white,c_white,c_white,1)	
+	}
 		draw_text_transformed_color(1100,834,"zombies killed : "+string(score),1.5,1.5,0,c_white,c_white,c_white,c_white,1)
 
 	if(boss = 1)
