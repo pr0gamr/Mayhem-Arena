@@ -29,7 +29,7 @@ if(attack_choose == 0)
 {
 chargeattack = 1
 speed = 0
-alarm_set(0,30)
+alarm_set(0,45)
 }
 if(attack_choose == 1)
 {
