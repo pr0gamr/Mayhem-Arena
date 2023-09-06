@@ -61,7 +61,7 @@ Left click to shoot
 Right click to switch weapons
 Move mouse to aim
 WASD to move
-
+Press F to enter Full Screen
 
 
 
