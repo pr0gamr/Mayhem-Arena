@@ -62,7 +62,7 @@ Right click to switch weapons
 Move mouse to aim
 WASD to move
 Press F to enter Full Screen
-
+Esc to quit
 
 
 
