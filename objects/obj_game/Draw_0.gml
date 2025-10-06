@@ -141,10 +141,10 @@ case rm_finalboss:
 			draw_set_halign(fa_center)
 			var R = c_red
 			var M = c_maroon
-			draw_rectangle_color(128,644,628,744,R,R,R,R,R)
+			draw_rectangle_color(128,644,628,744,R,R,R,R,true)
 			draw_text_transformed_color(378,684,"YES",2.5,2.5,0,R,R,R,R,1)
 			
-			draw_rectangle_color(728,644,1228,744,R,R,R,R,R)
+			draw_rectangle_color(728,644,1228,744,R,R,R,R,true)
 			draw_text_transformed_color(978,684,"NO",2.5,2.5,0,R,R,R,R,1)
 			
 			draw_text_transformed_color(room_width/2,150,
